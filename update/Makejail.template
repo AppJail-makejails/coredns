@@ -1,0 +1,30 @@
+INCLUDE options/options.makejail
+
+ARG coredns_tag=%%TAG1%%
+ARG coredns_ajspec=gh+AppJail-makejails/coredns
+
+FROM --entrypoint "${coredns_ajspec}" coredns:${coredns_tag}
+
+STOP
+
+STAGE start
+
+WORKDIR /coredns
+
+RUN daemon \
+        -t "DNS server that chains plugins" \
+        -p /coredns/.pid \
+        -o /coredns/.log \
+            coredns
+
+STAGE custom:coredns_status
+
+CMD if [ -f "/coredns/.pid" ]; then \
+        top -ap `head -1 /coredns/.pid`; \
+    fi
+
+STAGE custom:coredns_log
+
+CMD if [ -f "/coredns/.log" ]; then \
+        less -R /coredns/.log; \
+    fi
