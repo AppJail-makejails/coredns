@@ -1,16 +1,17 @@
 tags+: 13.5
 13.5.arch: amd64
 13.5.name: "coredns"
-13.5.timestamp.amd64: 1755155896
-13.5.sum.amd64: c77f036f7ae6ca044df1ff9b7499317a8a3b80d312d5a646987a6d0996a9f89e
-13.5.size.amd64: 51078358
+13.5.timestamp.amd64: 1756939417
+13.5.sum.amd64: 42a65984a4bf215d661d1be4eb7754195bed7eb6d21d4e5e9c9ee7333a6c8a53
+13.5.size.amd64: 50399549
 13.5.source.amd64: "https://images.all101bsd.download/coredns/13.5-amd64-image.appjail"
 13.5.source.amd64+: "http://appjail.hpc.at/coredns/13.5-amd64-image.appjail"
 tags+: 14.3
 14.3.arch: amd64
 14.3.name: "coredns"
-14.3.timestamp.amd64: 1755157217
-14.3.sum.amd64: c3afe2a9e4dadc4142efccd5d33e60b3cdd93f711c5f3abcc9f21211caeaca0c
-14.3.size.amd64: 50141047
+14.3.timestamp.amd64: 1756939537
+14.3.sum.amd64: 8770529358162b96bfc59787fc528a4e86399bfb956f86f2ea729059e3375d38
+14.3.size.amd64: 50252291
 14.3.source.amd64: "https://images.all101bsd.download/coredns/14.3-amd64-image.appjail"
 14.3.source.amd64+: "http://appjail.hpc.at/coredns/14.3-amd64-image.appjail"
+maintenance: "This image is uploading, please wait a moment and try again. If you are importing this image using a Makejail that has the '--<name>_ajspec' argument, you can use the 'reproduce' method to use 'appjail-reproduce'. See 'appjail-image(5)' for details."
