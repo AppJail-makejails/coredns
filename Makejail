@@ -1,6 +1,6 @@
 INCLUDE options/options.makejail
 
-ARG coredns_tag=13.5
+ARG coredns_tag=14.3
 ARG coredns_ajspec=gh+AppJail-makejails/coredns
 
 FROM --entrypoint "${coredns_ajspec}" coredns:${coredns_tag}
