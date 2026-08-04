@@ -1,5 +1,6 @@
 ARG coredns_from=ghcr.io/appjail-makejails/coredns
 ARG coredns_tag=latest
 
+OPTION container=boot
 OPTION overwrite=force
 OPTION from=${coredns_from}:${coredns_tag}
