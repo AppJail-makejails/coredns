@@ -14,7 +14,7 @@ LABEL org.opencontainers.image.title="CoreDNS" \
 RUN set -xe; \
     \
     pkg update; \
-    pkg install -U coredns; \
+    pkg install coredns; \
     \
     if [ -z "${NO_PKGCLEAN}" ]; then \
         pkg clean -a; \
